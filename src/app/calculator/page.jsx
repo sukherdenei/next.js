@@ -1,4 +1,51 @@
-//1-9 towch drh
+// "use client";
+// import React from "react";
+// export default function Page() {
+//   let a = 10;
+//   function buttonClicked() {
+//     console.log("buton is clicked");
+//   }
+//   return (
+//     <div>
+//       <p> page {a}</p>
+//       <button onClick={buttonClicked}>CLICK ME BBY</button>
+//     </div>
+//   );
+// }
+
+// "use client";
+// import React, { useState } from "react";
+// export default function Page() {
+//   const [number, setNumber] = useState(10);
+
+//   function buttonClicked() {
+//     setNumber(100);
+//   }
+//   return (
+//     <div>
+//       <p>page{number}</p>
+//       <button onClick={buttonClicked}>CLICK ME</button>
+//     </div>
+//   );
+// }
+
+// "use client";
+// import React, { useState } from "react";
+
+// export default function Page() {
+//   // react hook, components dotor ashiglana
+//   const [number, setNumber] = useState(10);
+//   function buttonClicked() {
+//     setNumber(number + 1);
+//   }
+//   return (
+//     <div>
+//       <p>page{number}</p>
+//       <button onClick={buttonClicked}>increase</button>
+//     </div>
+//   );
+// }
+
 "use client";
 import Style from "./cal.module.css";
 
@@ -9,7 +56,6 @@ export default function Page() {
   function buttonClicked(a) {
     setNumber(a);
   }
-
   return (
     <div className={Style.xx}>
       <p>Тоогоо оруулна уу:{number}</p>
@@ -18,11 +64,6 @@ export default function Page() {
       <button onClick={() => buttonClicked(3)}>3</button>
       <button onClick={() => buttonClicked(4)}>4</button>
       <button onClick={() => buttonClicked(5)}>5</button>
-      <button onClick={() => buttonClicked(6)}>6</button>
-      <button onClick={() => buttonClicked(7)}>7</button>
-      <button onClick={() => buttonClicked(8)}>8</button>
-      <button onClick={() => buttonClicked(9)}>9</button>
-      <button onClick={() => buttonClicked(10)}>10</button>
     </div>
   );
 }

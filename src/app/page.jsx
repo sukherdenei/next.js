@@ -27,7 +27,7 @@ export default function Home() {
             "https://www.hindustantimes.com/ht-img/img/2023/07/23/1600x900/Sakura_Sasuke-transformed_1682517759260_1690106645022.webp"
           }
         />
-      </div>{" "}
+      </div>
       <Footer />
     </div>
   );
