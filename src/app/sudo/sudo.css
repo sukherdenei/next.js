@@ -1,0 +1,24 @@
+.sudo {
+  width: 400px;
+  height: 100px;
+  background-color: dimgray;
+  display: flex;
+  flex-direction: column;
+}
+
+.numbers {
+  background-color: rgb(44, 44, 44);
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.dec {
+  background-color: rgb(12, 12, 12);
+}
+.inc {
+  background-color: rgb(66, 66, 66);
+}
