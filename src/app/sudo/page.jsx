@@ -1,65 +1,10 @@
 // "use client";
 // import { useState } from "react";
 // import "./sudo.css";
-// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-// export default function Page() {
-//   const [num, setNum] = useState(0);
-
-//   const nem = () => {
-//     setNum(num + 1);
-//   };
-
-//   const has = () => {
-//     setNum(num - 1);
-//   };
-//   return (
-//     <div className="zagvar">
-//       <button onClick={nem}>nemeh</button>
-//       <button onClick={has}>hasah</button>
-//       <h1>{num}</h1>
-//       <h1 className="xxx">
-//         {numbers.map((a) => {
-//           return a;
-//         })}
-//       </h1>
-//     </div>
-//   );
-// }
 
 "use client";
 import "./sudo.css";
 import React, { use, useState } from "react";
-
-// export default function Page() {
-//   const [num, setNum] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-//   const increasement = () => {
-//     setNum([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-//   };
-//   const decreasement = () => {
-//     const sortt = num.sort((a, b) => {
-//       return b - a;
-//     });
-//     // console.log(dec1);
-//     setNum([...sortt]);
-//   };
-
-//   return (
-//     <div className="sudo">
-//       <button className="dec" onClick={decreasement}>
-//         hasah
-//       </button>
-//       <button className="inc" onClick={increasement}>
-//         nemeh
-//       </button>
-//       <div className="numbers">
-//         {num.map((a) => {
-//           return <h4 key={a}>{a}</h4>;
-//         })}
-//       </div>
-//     </div>
-//   );
-// }
 
 // export default function Page() {
 //   const [num, setNum] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9]);
@@ -74,11 +19,11 @@ import React, { use, useState } from "react";
 //   };
 //   return (
 //     <div className="sudo">
-//       <button onClick={hasah}>hasah</button>
-//       <button onClick={nemeh}>nemeh</button>
+//       <button onClick={nemeh}>+</button>
+//       <button onClick={hasah}>-</button>
 //       <div className="numbers">
 //         {num.map((a) => {
-//           return <h1 key={a}>{a}</h1>;
+//           return <p key={a}>{a}</p>;
 //         })}
 //       </div>
 //     </div>
@@ -107,12 +52,36 @@ import React, { use, useState } from "react";
 //     </div>
 //   );
 // }
-export default function Page() {
+// export default function Home() {
+//   const [num, setNum] = useState(10);
+//   const nemeh = () => {
+//     setNum(num + 1);
+//   };
+//   const hasah = () => {
+//     setNum(num - 1);
+//   };
+//   const huvaah = () => {
+//     setNum(num / 2);
+//   };
+//   const urjih = () => {
+//     setNum(num * 2);
+//   };
+//   return (
+//     <div>
+//       <button onClick={nemeh}>+</button>
+//       <button onClick={hasah}>-</button>
+//       <button onClick={urjih}>*</button>
+//       <button onClick={huvaah}>%</button>
+//       <p>{num}</p>
+//     </div>
+//   );
+// }
+export default function Home() {
   const [num, setNum] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-  const nemeh = () => {
+  const increasement = () => {
     setNum([1, 2, 3, 4, 5, 6, 7, 8, 9]);
   };
-  const hasah = () => {
+  const decreasement = () => {
     const sort = num.sort((a, b) => {
       return b - a;
     });
@@ -120,8 +89,8 @@ export default function Page() {
   };
   return (
     <div className="sudo">
-      <button onClick={nemeh}>+</button>
-      <button onClick={hasah}>-</button>
+      <button onClick={increasement}>+</button>
+      <button onClick={decreasement}>-</button>
       <div className="numbers">
         {num.map((a) => {
           return <p key={a}>{a}</p>;
